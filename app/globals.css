@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.root,
+#root #docs-root {
+  --primary-color: #0b193e !important;
+  --secondary-color: #6d67e4;
+  --secondary-hover: #6d67e49a;
+  --gradiant-color: linear-gradient(
+    180deg,
+    #0b193e 0%,
+    #3d4193 51.04%,
+    #6d67e4 100%
+  );
+  --black-one-color: #000015;
+  --black-two-color: #1d1d1d;
+  --black-three-color: #282828;
+  --white-color: #ebf6fe;
+  --gray-one-coloer: #333333;
+  --gray-two-coloer: #4f4f4f;
+  --gray-three-coloer: #828282;
+  --gray-four-coloer: #bdbdbd;
+  --success-color: #27ae60;
+  --info-color: #2f80ed;
+  --danger-color: #eb5757;
+  --warning-color: #e2b93b;
+  /* ================================== */
+  --main-color: #36363a;
+  --main-color-hover: #36363ab9;
+  --orange-color: #ff8000;
+  --orange-color-hover: #ff8000d2;
+  --gray-color: #e4e5e6;
+  --blue-gradient: rgba(16, 144, 203, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.padding_container {
+  @apply px-2 md:px-10 lg:px-14;
+}
+body > * {
+  overflow: hidden !important;
+}
+.imageBlur {
+  background-image: url("/imgs/Ellipse4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heroBackground {
+  background-image: url("/imgs/banar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1 !important;
+  top: 0;
+  left: 0;
+}
+
+.familyPoppins {
+  font-family: "Poppins", sans-serif !important;
+}
+.lis_list li {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+@media (min-width: 1024px) {
+  .lis_list li {
+    border-bottom: 0;
+  }
+}
+.logoText {
+  color: black;
+  font-weight: bold !important;
+}
+@supports (-webkit-text-stroke-width: 0.6px) {
+  .logoText {
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.538);
+  }
+}
+.slick-slider .slick-arrow {
+  display: none !important;
+}
+.responsiveText {
+  font-size: clamp(2rem, 16vw, 5.6rem);
+}
+.sliderBg {
+  background-image: url("/imgs/sliderBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  opacity: 0.1;
+}

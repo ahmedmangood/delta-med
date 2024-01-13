@@ -1,0 +1,64 @@
+{
+  "Navbar_Links": {
+    "home": "Home",
+    "services": "Services",
+    "about-us": "About Us",
+    "contact-us": "Contact Us"
+  },
+  "Hompage": {
+    "hero-title": "Experienced information technology and communication solutions",
+    "hero-paragraph": "we strive to provide Our customers with cutting-edge, rules-oriented solutions and visually activated to meet communication needs",
+    "contact-btn": "Contact Us"
+  },
+  "Services": {
+    "services-title": "Services and Products we provide",
+    "SmartHome-title": "Smart Home",
+    "SmartHome-desc": "It is the linking of the various devices and systems in the home together so that You can control them all from anywhere, and there are reliable devices",
+    "DataRoom-title": "Data Room",
+    "DataRoom-desc": "This is the special room for collecting all the data inside The cabin",
+    "SystemNumbering-title": "System Numbering",
+    "SystemNumbering-desc": "It is the system of work to organize the roundabout so that no congestion process occurs",
+    "AccessControl-title": "Access Control",
+    "AccessControl-desc": "The last part, which is no less important than the previous one, is protection, where you can connect cameras. Monitoring, intercom devices, and even time attendance devices with your central",
+    "CCTVSystem-title": "CCTV System",
+    "CCTVSystem-desc": "A television surveillance system by installing cameras It is used for security .",
+    "IntercomeSystem-title": "Intercome System",
+    "IntercomeSystem-desc": "It is an independent intercom that is installed on the doors ...",
+    "SystemSecurity-title": "System Security",
+    "SystemSecurity-desc": "The last part, which is no less important than the previous one, The exchange or exchange is the cornerstone of establishing is protection, where you can connect cameras",
+    "CenteralModern-title": "Centeral Modern",
+    "CenteralModern-desc": "The exchange or exchange is the cornerstone of establishing a uniﬁed communications system ",
+    "ElectricalWorks-title": "Electrical Works",
+    "ElectricalWorks-desc": "And in all knowledgeable electrical works, such as lighting, electric fuses, and the installation of their own drums.",
+    "VideoDisplayWalls-title": "Video Display Walls",
+    "VideoDisplayWalls-desc": "A special multi-monitor setup consisting of multiple computer monitors or projectors. Video or TV sets are stacked together adjacent or overlapping to form one large screen",
+    "WebsitesAndMobileApps-title": "Websites and Mobile Apps",
+    "WebsitesAndMobileApps-desc": "Websites and mobile applications: We provide website design services.",
+    "AdvertismentAndMarketing-title": "Advertisment and Marketing",
+    "AdvertismentAndMarketing-desc": "We work to provide distinguished solutions in the ﬁeld of marketing, advertising and advertising, and we offer highly professional services in the ﬁeld of graphics, videos and motion graphics.",
+    "feature-one": "Innovation",
+    "feature-two": "Quality",
+    "feature-three": "Efficient"
+  },
+  "AboutUs": {
+    "title": "About The Company",
+    "paragraph-one": "We are the Triple Point Company specializing in comprehensive IT services.",
+    "paragraph-two": "Our expertise includes system analysis, custom software development, website design, user interface optimization, virtual reality, application development, AI techniques, TV monitoring system setup, smart home installations, electrical work, and more"
+  },
+  "ContactUs": {
+    "title": "Contact With Us",
+    "form-title": "Do you have questions ?",
+    "form-name-lable": "your name",
+    "form-email-lable": "your email",
+    "form-msg-lable": "your message",
+    "form-msg-placeholder": "Leave a message...",
+    "form-btn": "send",
+    "form-msg": "Message sent successfully.",
+    "form-err": "Faild To Send Message !",
+    "form-err-2": "Please Fill All The Fields"
+  },
+  "Footer": {
+    "footer-title": "All Rights received - TriplePoint©2024",
+    "footer-follow": "Follow us"
+  }
+}
