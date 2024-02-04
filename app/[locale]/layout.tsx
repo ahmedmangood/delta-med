@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 import { Noto_Kufi_Arabic, Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { CustomNavbar, Footer } from "@/components";
 import AousAnimation from "@/components/aosAnimation";
+import { Footer, NavBar } from "@/components";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,9 +31,9 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Triple Point For Trading",
+  title: "Delta Med",
   description:
-    "Triple Point For Trading - The Best Solutions For Information Technologies and Communications",
+    "Delta Med Global Contracting - A Self-Performing General Contractor Focused on Highly Complex and Technical Projects ",
 };
 
 export default async function LocaleLayout({
@@ -59,11 +59,13 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <header>
-            <CustomNavbar />
+            <NavBar />
           </header>
           <AousAnimation>{children}</AousAnimation>
-          <Footer />
         </NextIntlClientProvider>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

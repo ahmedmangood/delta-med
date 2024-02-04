@@ -7,7 +7,7 @@ interface PrimaryButtonProps {
   icon?: string | React.ReactElement;
 }
 
-const PrimaryButton = ({
+const CustomButton = ({
   title,
   ourStyle,
   action,
@@ -15,7 +15,7 @@ const PrimaryButton = ({
 }: PrimaryButtonProps) => {
   return (
     <button
-      className={`border-2 border-orange-color hover:bg-orange-color text-sm font-semibold transition-colors text-white py-3 px-14 shadow rounded-xl mx-auto mt-5 mb-3 ${ourStyle}`}
+      className={`border-2 border-green-600 text-sm font-semibold hover:bg-green-600 transition duration-500 text-white py-3 px-14 shadow mx-auto mt-5 mb-3 ${ourStyle}`}
       onClick={action}
     >
       {title}
@@ -24,4 +24,4 @@ const PrimaryButton = ({
   );
 };
 
-export default PrimaryButton;
+export default CustomButton;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { PrimaryButton } from ".";
+import { CustomButton } from ".";
 import { RiSendPlaneFill } from "react-icons/ri";
 
 import emailjs from "@emailjs/browser";
@@ -180,7 +180,7 @@ function ContactUs() {
             />
           </div>{" "}
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-            <PrimaryButton
+            <CustomButton
               title={t("form-btn")}
               ourStyle="text-[20px] border-1 border-white hover:bg-white hover:text-gray-700 flex items-center justify-center gap-2"
               icon={<RiSendPlaneFill style={{ fontSize: "20px" }} />}

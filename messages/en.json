@@ -10,6 +10,17 @@
     "hero-paragraph": "we strive to provide Our customers with cutting-edge, rules-oriented solutions and visually activated to meet communication needs",
     "contact-btn": "Contact Us"
   },
+  "Features": {
+    "title": "Our Features",
+    "feature-one-title": "Customized Offices",
+    "feature-one-paragraph": "Serviced offices of various sizes and configurations, big or small, to cater to your every need.",
+    "feature-two-title": "Convenient Payment",
+    "feature-two-paragraph": "Our facilities are first-rate, at a price that will certainly match your budget.",
+    "feature-three-title": "Prestigious Location",
+    "feature-three-paragraph": "Get your business up and running in a prestigious and convenient business location in Riyadh.",
+    "feature-four-title": "Business Solutions",
+    "feature-four-paragraph": "We will go out of our way to ensure that we provide a service that best suits your business’ needs."
+  },
   "Services": {
     "services-title": "Services and Products we provide",
     "SmartHome-title": "Smart Home",

@@ -1,20 +1,34 @@
-import CustomNavbar from "./layout/Navbar";
-import Footer from "./layout/Footer";
 import Hero from "./Hero";
-import PrimaryButton from "./PrimaryButton";
+
 import AboutUs from "./Aboutus";
 import ContactUs from "./ContactUs";
 import ServiceSlider from "./ServiceSlider";
 import MapAndSocial from "./MapAndSocial";
 import LastFooter from "./LastFooter";
+import CustomButton from "./CustomButton";
+import NavBar from "./NavBar";
+import SideBar from "./SideBar";
+import Banner from "./Banner";
+import Features from "./Features";
+import OurserviceSection from "./OurserviceSection";
+import SlideSection from "./SlideSection";
+import OurValues from "./OurValues";
+import Footer from "./Footer";
+
 export {
-  CustomNavbar,
   ServiceSlider,
   ContactUs,
-  PrimaryButton,
-  Footer,
+  CustomButton,
   Hero,
   AboutUs,
   MapAndSocial,
   LastFooter,
+  NavBar,
+  SideBar,
+  Banner,
+  Features,
+  OurserviceSection,
+  SlideSection,
+  OurValues,
+  Footer,
 };

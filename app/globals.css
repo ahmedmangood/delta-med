@@ -103,3 +103,6 @@ body > * {
   width: 100%;
   opacity: 0.1;
 }
+.p-menuitem-active {
+  color: green !important;
+}
