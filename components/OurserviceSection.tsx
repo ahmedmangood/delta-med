@@ -18,7 +18,7 @@ function OurserviceSection() {
         </div>
         <CustomButton
           title="Explore More"
-          ourStyle="bg-green-600 hover:bg-green-400"
+          ourStyle="bg-green-600 hover:bg-green-300 hover:text-green-600 transition-colors"
           action={routeToAllServices}
         />
       </div>

@@ -17,8 +17,8 @@ function SlideSection() {
         height={800}
         className="w-full h-[400px] md:h-[600px] brightness-50"
       />
-      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center">
-        <h6 className="text-xl md:text-3xl italic text-white text-center">
+      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center gap-4">
+        <h6 className="text-xl md:text-4xl italic text-gray-200 text-center font-bold">
           Get in touch with us
         </h6>
         <CustomButton title="Contact Us" action={routeToContact} />
