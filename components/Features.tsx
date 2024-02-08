@@ -14,7 +14,7 @@ function Features() {
       id: 2,
       title: t("feature-two-title"),
       desc: t("feature-two-paragraph"),
-      img: "/webimages/businessSolution.jpg",
+      img: "/webimages/payment.jpg",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ function Features() {
       id: 4,
       title: t("feature-four-title"),
       desc: t("feature-four-paragraph"),
-      img: "/webimages/payment.jpg",
+      img: "/webimages/businessSolution.jpg",
     },
   ];
   return (

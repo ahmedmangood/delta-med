@@ -6,6 +6,7 @@ import SideBar from "./SideBar";
 import Link from "next-intl/link";
 import { IoLanguageSharp } from "react-icons/io5";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 function NavBar() {
   const t = useTranslations("Navbar_Links");
@@ -42,44 +43,69 @@ function NavBar() {
     },
   ];
 
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 z-50 w-full px-8 py-4">
+    <nav
+      className={`fixed top-0 z-50 w-full px-8 py-4 ${
+        isScrolling
+          ? "border-b-2 border-gray-200 transition-all duration-500 bg-gray-900"
+          : ""
+      }`}
+    >
       <div className="flex items-center justify-between">
         <NextLink href={"/"}>
           <Image src="/logosm.png" alt="logo" width={50} height={50} />
         </NextLink>
-        <ul className="text-white gap-6 hidden lg:flex">
-          <Dropdown
-            label={
-              <li className="hover:text-green-600 transition-colors">
-                {t("services")}
-              </li>
-            }
-            inline
-            className="w-[180px] text-center flex flex-col items-center justify-center bg-gray-100 hover:text-green-600 transition-colors"
-          >
-            {allServices.map((service) => {
-              return (
-                <Dropdown.Item
-                  key={service.id}
-                  className="border-b-2 border-gray-200 w-full hover:text-gray-400 transition-color"
-                >
-                  <NextLink href={service.url} className="">
-                    {service.title}
-                  </NextLink>
-                </Dropdown.Item>
-              );
-            })}
-          </Dropdown>
-          <li className="hover:text-green-600 transition-colors">
-            <NextLink href={"about"}>{t("about-us")}</NextLink>
-          </li>
-          <li className="hover:text-green-600 transition-colors">
-            <NextLink href={"contact"}>{t("contact-us")}</NextLink>
-          </li>
-        </ul>
-        <SideBar />
-        <div className="flex items-center justify-center gap-2 text-white">
+        <div className="flex items-center justify-center gap-4 text-white">
+          <ul className="text-white gap-6 hidden lg:flex">
+            <Dropdown
+              label={
+                <li className="hover:text-green-600 transition-colors">
+                  {t("services")}
+                </li>
+              }
+              inline
+              className="w-[180px] text-center flex flex-col items-center justify-center bg-gray-100 hover:text-green-600 transition-colors"
+            >
+              {allServices.map((service) => {
+                return (
+                  <Dropdown.Item
+                    key={service.id}
+                    className="border-b-2 border-gray-200 w-full hover:text-gray-400 transition-color"
+                  >
+                    <NextLink href={service.url} className="">
+                      {service.title}
+                    </NextLink>
+                  </Dropdown.Item>
+                );
+              })}
+            </Dropdown>
+            <li className="hover:text-green-600 transition-colors">
+              <NextLink href={"about"}>{t("about-us")}</NextLink>
+            </li>
+            <li className="hover:text-green-600 transition-colors">
+              <NextLink href={"contact"}>{t("contact-us")}</NextLink>
+            </li>
+          </ul>
+          <SideBar />
+
           <Dropdown
             label={
               <span className="text-white text-xl">

@@ -12,19 +12,21 @@ const Hero = () => {
 
   return (
     <section className="h-screen relative">
-      <div className="absolute w-full h-full bg-[url('/webimages/header.jpg')] bg-no-repeat bg-cover brightness-50"></div>
+      <div className="absolute w-full h-full bg-[url('/webimages/header.jpg')] bg-no-repeat bg-cover brightness-50 grayscale-[40%]"></div>
       <div
         data-aos="fade-up"
-        className="text-white text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        className="px-4 md:px-8 lg:px-12 w-full text-white text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
       >
-        <h2 className="font-bold text-4xl mb-5">
-          Delta Med Global Contracting
+        <h2 className="font-bold text-2xl md:text-4xl mb-5">
+          {t("hero-title")}
         </h2>
-        <p>
-          A Self-Performing General Contractor Focused on Highly Complex and
-          Technical Projects
+        <span className="text-lg md:text-2xl font-semibold">
+          {t("hero-slug")}
+        </span>
+        <p className="pt-4 md:leading-7 text-base md:text-xl">
+          {t("hero-paragraph")}
         </p>
-        <CustomButton title="About Us" action={routeToAboutus} />
+        <CustomButton title={t("about-btn")} action={routeToAboutus} />
       </div>
     </section>
   );
