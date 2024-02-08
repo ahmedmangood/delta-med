@@ -35,7 +35,10 @@ function Features() {
         <h4 className="text-2xl">{t("title")}</h4>
         <hr className="border-t-4 border-gray-800" />
       </div>
-      <div className="flex flex-col md:flex-row md:flex-wrap gap-3 items-center justify-center w-full ">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col md:flex-row md:flex-wrap gap-3 items-center justify-center w-full "
+      >
         {allFeatures.map((feature) => (
           <div
             key={feature.id}

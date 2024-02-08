@@ -1,58 +1,58 @@
 "use client";
 import { Dropdown } from "flowbite-react";
 import Image from "next/image";
-import Link from "next/link";
-import { HiOutlineMenu } from "react-icons/hi";
-import { useState } from "react";
+import NextLink from "next/link";
 import SideBar from "./SideBar";
-
-const allServices = [
-  {
-    id: 1,
-    title: "All Services",
-    url: "/services",
-  },
-  {
-    id: 2,
-    title: "Serviced Offices",
-    url: "/services/serviced_offices",
-  },
-  {
-    id: 3,
-    title: "Virtual Offices",
-    url: "/services/virtual_offices",
-  },
-  {
-    id: 4,
-    title: " Meeting Rooms",
-    url: "/services/meeting_rooms",
-  },
-  {
-    id: 5,
-    title: "Business Support",
-    url: "/services/business_support",
-  },
-  {
-    id: 6,
-    title: "Company Formation",
-    url: "/services/company_formation",
-  },
-];
+import Link from "next-intl/link";
+import { IoLanguageSharp } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 function NavBar() {
-  const [visible, setVisible] = useState<boolean>(false);
+  const t = useTranslations("Navbar_Links");
+  const allServices = [
+    {
+      id: 1,
+      title: t("allServices"),
+      url: "/services",
+    },
+    {
+      id: 2,
+      title: t("servicedOffices"),
+      url: "/services/serviced_offices",
+    },
+    {
+      id: 3,
+      title: t("virtualOffices"),
+      url: "/services/virtual_offices",
+    },
+    {
+      id: 4,
+      title: t("meetingRooms"),
+      url: "/services/meeting_rooms",
+    },
+    {
+      id: 5,
+      title: t("businessSupport"),
+      url: "/services/business_support",
+    },
+    {
+      id: 6,
+      title: t("companyFormation"),
+      url: "/services/company_formation",
+    },
+  ];
 
   return (
-    <nav className="absolute top-0 z-50 w-full px-8 py-4">
+    <nav className="fixed top-0 z-50 w-full px-8 py-4">
       <div className="flex items-center justify-between">
-        <Link href={"/"}>
+        <NextLink href={"/"}>
           <Image src="/logosm.png" alt="logo" width={50} height={50} />
-        </Link>
+        </NextLink>
         <ul className="text-white gap-6 hidden lg:flex">
           <Dropdown
             label={
               <li className="hover:text-green-600 transition-colors">
-                Services
+                {t("services")}
               </li>
             }
             inline
@@ -64,21 +64,63 @@ function NavBar() {
                   key={service.id}
                   className="border-b-2 border-gray-200 w-full hover:text-gray-400 transition-color"
                 >
-                  <Link href={service.url} className="">
+                  <NextLink href={service.url} className="">
                     {service.title}
-                  </Link>
+                  </NextLink>
                 </Dropdown.Item>
               );
             })}
           </Dropdown>
           <li className="hover:text-green-600 transition-colors">
-            <Link href={"about"}>About</Link>
+            <NextLink href={"about"}>{t("about-us")}</NextLink>
           </li>
           <li className="hover:text-green-600 transition-colors">
-            <Link href={"contact"}>Contact</Link>
+            <NextLink href={"contact"}>{t("contact-us")}</NextLink>
           </li>
         </ul>
         <SideBar />
+        <div className="flex items-center justify-center gap-2 text-white">
+          <Dropdown
+            label={
+              <span className="text-white text-xl">
+                <IoLanguageSharp />
+              </span>
+            }
+            inline
+            style={{ color: "white !important" }}
+          >
+            <Dropdown.Item>
+              <Link
+                locale="ar"
+                href={"/"}
+                className="flex items-center justify-center gap-2"
+              >
+                <Image
+                  src={"/flags/ar.png"}
+                  width={20}
+                  height={20}
+                  alt="arabic"
+                />
+                <h6 className="font-bold">اللغة العربية</h6>
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <Link
+                locale="en"
+                href={"/"}
+                className="flex items-center justify-center gap-2"
+              >
+                <Image
+                  src={"/flags/en.svg"}
+                  width={20}
+                  height={20}
+                  alt="english"
+                />
+                <h6 className="font-bold">English</h6>
+              </Link>
+            </Dropdown.Item>
+          </Dropdown>
+        </div>
       </div>
     </nav>
   );

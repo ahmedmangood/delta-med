@@ -1,9 +1,14 @@
 {
   "Navbar_Links": {
-    "home": "Home",
     "services": "Services",
-    "about-us": "About Us",
-    "contact-us": "Contact Us"
+    "about-us": "About",
+    "contact-us": "Contact",
+    "allServices": "All Services",
+    "servicedOffices": "Serviced Offices",
+    "virtualOffices": "Virtual Offices",
+    "meetingRooms": "Meeting Rooms",
+    "businessSupport": "Business Support",
+    "companyFormation": "Company Formation"
   },
   "Hompage": {
     "hero-title": "Experienced information technology and communication solutions",

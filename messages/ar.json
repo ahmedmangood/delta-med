@@ -1,9 +1,14 @@
 {
   "Navbar_Links": {
-    "home": "الصفحة الرئيسية",
     "services": "الخدمات",
     "about-us": "عن الشركة",
-    "contact-us": "تواصل معنا"
+    "contact-us": "تواصل معنا",
+    "allServices": "جميع الخدمات",
+    "servicedOffices": "المكاتب المجهزة",
+    "virtualOffices": "المكاتب الإفتراضية",
+    "meetingRooms": "غرف الإجتماعات",
+    "businessSupport": "دعم الأعمال",
+    "companyFormation": "تكوين الشركة"
   },
   "Hompage": {
     "hero-title": "خبراء ومتخصصون في مجالات تكنولوجيا المعلومات و الاتصالات",

@@ -18,10 +18,17 @@ function SlideSection() {
         className="w-full h-[400px] md:h-[600px] brightness-50"
       />
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center gap-4">
-        <h6 className="text-xl md:text-4xl italic text-gray-200 text-center font-bold">
+        <h6
+          data-aos="fade-up"
+          className="text-xl md:text-4xl italic text-gray-200 text-center font-bold"
+        >
           Get in touch with us
         </h6>
-        <CustomButton title="Contact Us" action={routeToContact} />
+        <CustomButton
+          animate="fade-down"
+          title="Contact Us"
+          action={routeToContact}
+        />
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ function OurserviceSection() {
   };
   return (
     <section className="px-4 md:px-8 lg:px-16 flex flex-col gap-16 md:flex-row items-center justify-between my-10">
-      <div className="flex flex-col gap-4 items-start">
+      <div data-aos="fade-right" className="flex flex-col gap-4 items-start">
         <h4 className="text-3xl font-semibold">our services</h4>
         <div>
           <p>Get access to all our services.</p>
@@ -23,6 +23,7 @@ function OurserviceSection() {
         />
       </div>
       <Image
+        data-aos="fade-left"
         src={"/webimages/ourservicesSection.png"}
         alt={"Our Services"}
         width={400}

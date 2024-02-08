@@ -1,7 +1,10 @@
 function Banner() {
   return (
     <section className="px-4 md:px-8 lg:px-16 my-20">
-      <div className="flex flex-col items-center justify-center gap-6">
+      <div
+        data-aos="fade-down"
+        className="flex flex-col items-center justify-center gap-6"
+      >
         <h2 className="text-2xl font-bold text-gray-500 text-center">
           We Exist to Build Great Things
         </h2>
