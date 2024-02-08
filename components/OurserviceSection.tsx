@@ -20,7 +20,7 @@ function OurserviceSection() {
         </div>
         <CustomButton
           title={t("services-btn")}
-          ourStyle="bg-green-600 hover:bg-green-400 hover:text-green-600 transition-colors"
+          ourStyle="bg-green-600 hover:bg-green-500 hover:text-gray-200 transition-colors"
           action={routeToAllServices}
         />
       </div>
