@@ -44,7 +44,7 @@ function Features() {
             key={feature.id}
             className="flex flex-col items-center justify-center gap-3 w-[300px]"
           >
-            <div className="border-2 border-white relative hover:text-lg transition-all w-72 h-60">
+            <div className="border-2 border-white relative w-72 h-60">
               <Image
                 src={feature.img}
                 alt={feature.title}
@@ -52,7 +52,7 @@ function Features() {
                 height={250}
                 className="w-full h-full transition-all duration-300 brightness-50"
               />
-              <h6 className="font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-center">
+              <h6 className="font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-center hover:scale-125 transition-all">
                 {feature.title}
               </h6>
             </div>
