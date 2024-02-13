@@ -76,9 +76,13 @@
     "feature-three": "Efficient"
   },
   "AboutUs": {
-    "title": "About The Company",
-    "paragraph-one": "We are the Triple Point Company specializing in comprehensive IT services.",
-    "paragraph-two": "Our expertise includes system analysis, custom software development, website design, user interface optimization, virtual reality, application development, AI techniques, TV monitoring system setup, smart home installations, electrical work, and more"
+    "title": "About",
+    "bannerTitle": "About Delta Med",
+    "bannerParagraph": "A leading contracting company dedicated to delivering exceptional construction and renovation solutions. With a commitment to quality, integrity, and innovation, we take pride in turning our clients visions into reality.",
+    "slideOneTitle": "Our Mission",
+    "slideOneParagraph": "At Delta Med, our mission is to exceed client expectations by providing unmatched craftsmanship and attention to detail. We strive to build long-lasting relationships based on trust, transparency, and reliability.",
+    "slideTwoTitle": "Client-Centric Approach",
+    "slideTwoParagraph": "At the heart of our company is a commitment to understanding our clients' unique needs. We work collaboratively with each client, tailoring our services to their specific requirements and ensuring open communication throughout the project lifecycle."
   },
   "ContactUs": {
     "title": "Contact With Us",

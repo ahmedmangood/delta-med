@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section className="h-screen relative">
-      <div className="absolute w-full h-full bg-[url('/webimages/header.jpg')] bg-no-repeat bg-cover brightness-50 grayscale-[40%]"></div>
+      <div className="absolute w-full h-full bg-[url('/webimages/header.jpg')] bg-no-repeat bg-cover bg-center brightness-50 grayscale-[40%]"></div>
       <div
         data-aos="fade-up"
         className="px-4 md:px-8 lg:px-12 w-full text-white text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"

@@ -7,6 +7,7 @@ import Link from "next-intl/link";
 import { IoLanguageSharp } from "react-icons/io5";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 function NavBar() {
   const t = useTranslations("Navbar_Links");
@@ -42,9 +43,10 @@ function NavBar() {
       url: "/services/company_formation",
     },
   ];
-
+  const pathName = usePathname();
   const [isScrolling, setIsScrolling] = useState(false);
-
+  // const pathNameWithoutLocaleAr = pathName.substring(1);
+  // const pathNameWithoutLocaleEn = pathName.substring(1);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -60,6 +62,10 @@ function NavBar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   console.log(pathNameWithoutLocale);
+  // }, []);
 
   return (
     <nav
@@ -77,7 +83,11 @@ function NavBar() {
           <ul className="text-white gap-6 hidden lg:flex">
             <Dropdown
               label={
-                <li className="hover:text-green-600 transition-colors">
+                <li
+                  className={`hover:text-green-600 transition-colors ${
+                    pathName === "/services" ? "text-green-600" : ""
+                  }`}
+                >
                   {t("services")}
                 </li>
               }
@@ -88,19 +98,25 @@ function NavBar() {
                 return (
                   <Dropdown.Item
                     key={service.id}
-                    className="border-b-2 border-gray-200 w-full hover:text-gray-400 transition-color"
+                    className={`border-b-2 border-gray-200 w-full hover:text-gray-400 transition-color`}
                   >
-                    <NextLink href={service.url} className="">
-                      {service.title}
-                    </NextLink>
+                    <NextLink href={service.url}>{service.title}</NextLink>
                   </Dropdown.Item>
                 );
               })}
             </Dropdown>
-            <li className="hover:text-green-600 transition-colors">
+            <li
+              className={`hover:text-green-600 transition-colors ${
+                pathName === "/about" ? "text-green-600" : ""
+              }`}
+            >
               <NextLink href={"about"}>{t("about-us")}</NextLink>
             </li>
-            <li className="hover:text-green-600 transition-colors">
+            <li
+              className={`hover:text-green-600 transition-colors ${
+                pathName === "/contact" ? "text-green-600" : ""
+              }`}
+            >
               <NextLink href={"contact"}>{t("contact-us")}</NextLink>
             </li>
           </ul>

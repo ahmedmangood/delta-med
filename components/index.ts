@@ -14,6 +14,9 @@ import OurserviceSection from "./OurserviceSection";
 import SlideSection from "./SlideSection";
 import OurValues from "./OurValues";
 import Footer from "./Footer";
+import HeaderSection from "./HeaderSection";
+import PagesBanner from "./PagesBanner";
+import AboutSlide from "./AboutSlide";
 
 export {
   ServiceSlider,
@@ -30,5 +33,8 @@ export {
   OurserviceSection,
   SlideSection,
   OurValues,
+  HeaderSection,
+  PagesBanner,
+  AboutSlide,
   Footer,
 };
