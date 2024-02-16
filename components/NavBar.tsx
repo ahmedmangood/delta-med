@@ -8,6 +8,7 @@ import { IoLanguageSharp } from "react-icons/io5";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import LocaleSwitcher from "./localeSwitcher";
 
 function NavBar() {
   const t = useTranslations("Navbar_Links");
@@ -45,8 +46,7 @@ function NavBar() {
   ];
   const pathName = usePathname();
   const [isScrolling, setIsScrolling] = useState(false);
-  // const pathNameWithoutLocaleAr = pathName.substring(1);
-  // const pathNameWithoutLocaleEn = pathName.substring(1);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -55,17 +55,11 @@ function NavBar() {
         setIsScrolling(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // useEffect(() => {
-  //   console.log(pathNameWithoutLocale);
-  // }, []);
 
   return (
     <nav
@@ -121,8 +115,8 @@ function NavBar() {
             </li>
           </ul>
           <SideBar />
-
-          <Dropdown
+          <LocaleSwitcher />
+          {/* <Dropdown
             label={
               <span className="text-white text-xl">
                 <IoLanguageSharp />
@@ -161,7 +155,7 @@ function NavBar() {
                 <h6 className="font-bold">English</h6>
               </Link>
             </Dropdown.Item>
-          </Dropdown>
+          </Dropdown> */}
         </div>
       </div>
     </nav>
