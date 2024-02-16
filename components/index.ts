@@ -6,6 +6,7 @@ import ServiceSlider from "./ServiceSlider";
 import MapAndSocial from "./MapAndSocial";
 import LastFooter from "./LastFooter";
 import CustomButton from "./CustomButton";
+import CustomeLink from "./customeLink";
 import NavBar from "./NavBar";
 import SideBar from "./SideBar";
 import Banner from "./Banner";
@@ -22,6 +23,7 @@ export {
   ServiceSlider,
   ContactUs,
   CustomButton,
+  CustomeLink,
   Hero,
   AboutUs,
   MapAndSocial,

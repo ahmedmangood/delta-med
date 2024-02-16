@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { CustomButton } from ".";
+import { CustomButton, CustomeLink } from ".";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -26,10 +26,10 @@ function SlideSection() {
         >
           {t("slidesection-title")}
         </h6>
-        <CustomButton
+        <CustomeLink
           animate="fade-down"
           title={t("slidesection-btn")}
-          action={routeToContact}
+          href="/contact"
         />
       </div>
     </section>

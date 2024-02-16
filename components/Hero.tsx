@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import CustomButton from "./CustomButton";
 import { useRouter } from "next/navigation";
+import { CustomeLink } from ".";
 
 const Hero = () => {
   const t = useTranslations("Hompage");
@@ -23,10 +24,10 @@ const Hero = () => {
         <span className="text-lg md:text-2xl font-semibold">
           {t("hero-slug")}
         </span>
-        <p className="pt-4 md:leading-7 text-base md:text-xl">
+        <p className="pt-4 md:leading-7 text-base md:text-xl mb-6">
           {t("hero-paragraph")}
         </p>
-        <CustomButton title={t("about-btn")} action={routeToAboutus} />
+        <CustomeLink title={t("about-btn")} href="/about" />
       </div>
     </section>
   );

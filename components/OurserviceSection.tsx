@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { CustomButton } from ".";
+import { CustomButton, CustomeLink } from ".";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -18,10 +18,10 @@ function OurserviceSection() {
           <p>{t("services-paragraph-one")}</p>
           <p>{t("services-paragraph-two")}</p>
         </div>
-        <CustomButton
+        <CustomeLink
           title={t("services-btn")}
           ourStyle="bg-green-600 hover:bg-green-500 hover:text-gray-200 transition-colors"
-          action={routeToAllServices}
+          href="/services"
         />
       </div>
       <Image
