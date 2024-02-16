@@ -21,27 +21,27 @@ function NavBar() {
     {
       id: 2,
       title: t("servicedOffices"),
-      url: "/services/serviced_offices",
+      url: "/services/servicedOffices",
     },
     {
       id: 3,
       title: t("virtualOffices"),
-      url: "/services/virtual_offices",
+      url: "/services/virtualOffices",
     },
     {
       id: 4,
       title: t("meetingRooms"),
-      url: "/services/meeting_rooms",
+      url: "/services/meetingRooms",
     },
     {
       id: 5,
       title: t("businessSupport"),
-      url: "/services/business_support",
+      url: "/services/businessSupport",
     },
     {
       id: 6,
       title: t("companyFormation"),
-      url: "/services/company_formation",
+      url: "/services/companyFormation",
     },
   ];
   const pathName = usePathname();

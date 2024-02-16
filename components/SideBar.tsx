@@ -5,42 +5,44 @@ import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Dropdown } from "flowbite-react";
+import { useTranslations } from "next-intl";
 
-const allServices = [
-  {
-    id: "1",
-    title: "All Services",
-    url: "/services",
-  },
-  {
-    id: "2",
-    title: "Serviced Offices",
-    url: "/services/serviced_offices",
-  },
-  {
-    id: "3",
-    title: "Virtual Offices",
-    url: "/services/virtual_offices",
-  },
-  {
-    id: "4",
-    title: " Meeting Rooms",
-    url: "/services/meeting_rooms",
-  },
-  {
-    id: "5",
-    title: "Business Support",
-    url: "/services/business_support",
-  },
-  {
-    id: "6",
-    title: "Company Formation",
-    url: "/services/company_formation",
-  },
-];
 function SideBar() {
+  const t = useTranslations("Navbar_Links");
+
   const [visible, setVisible] = useState<boolean>(false);
-  const menu = useRef<any>(null);
+  const allServices = [
+    {
+      id: "1",
+      title: t("allServices"),
+      url: "/services",
+    },
+    {
+      id: "2",
+      title: t("servicedOffices"),
+      url: "/services/serviced_offices",
+    },
+    {
+      id: "3",
+      title: t("virtualOffices"),
+      url: "/services/virtual_offices",
+    },
+    {
+      id: "4",
+      title: t("meetingRooms"),
+      url: "/services/meeting_rooms",
+    },
+    {
+      id: "5",
+      title: t("businessSupport"),
+      url: "/services/business_support",
+    },
+    {
+      id: "6",
+      title: t("companyFormation"),
+      url: "/services/company_formation",
+    },
+  ];
   return (
     <>
       <HiOutlineMenu
@@ -60,7 +62,7 @@ function SideBar() {
           <Dropdown
             label={
               <li className="hover:text-green-600 transition-colors">
-                Services
+                {t("services")}
               </li>
             }
             inline
@@ -80,10 +82,10 @@ function SideBar() {
             })}
           </Dropdown>
           <li className="hover:text-green-600 transition-colors">
-            <Link href={"about"}>About</Link>
+            <Link href={"about"}>{t("about-us")}</Link>
           </li>
           <li className="hover:text-green-600 transition-colors">
-            <Link href={"contact"}>Contact</Link>
+            <Link href={"contact"}>{t("contact-us")}</Link>
           </li>
         </ul>
       </Sidebar>

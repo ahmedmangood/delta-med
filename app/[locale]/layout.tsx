@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import AousAnimation from "@/components/aosAnimation";
 import { Footer, NavBar } from "@/components";
+import NextTopLoader from "nextjs-toploader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
     >
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <NextTopLoader showSpinner={false} color="green" />
           <header>
             <NavBar />
           </header>
