@@ -84,6 +84,15 @@
     "slideTwoTitle": "Client-Centric Approach",
     "slideTwoParagraph": "At the heart of our company is a commitment to understanding our clients' unique needs. We work collaboratively with each client, tailoring our services to their specific requirements and ensuring open communication throughout the project lifecycle."
   },
+  "ServicesPage": {
+    "services-title": "Our Services",
+    "readMore": "Read more",
+    "servicedOffices-paragraph": "Delta Med delivers the best serviced office solutions in Saudi. If you are a start-up business in Saudi looking for an office to help portray a professional image, or perhaps the owner of a small business looking to get the edge over your competition or maybe you need to open a branch of an international company, we have a ready-to-move-in office space available now.",
+    "virtualOffices-paragraph": "If you are starting up a business, working freelance, as a contractor, or are a small to medium enterprise then getting a virtual office is essential, and a must-have item on your to-do list.",
+    "meetingRooms-paragraph": "Our business centre is a home to a number of luxurious meeting rooms, board rooms, business lounges and conference facilities, suitable for all manner of business uses. We're confident that we're fully equipped to cater for your meeting requirements, whatever their shape and size.",
+    "businessSupport-paragraph": "Delta Med delivers first-class business support services for companies of all sizes. If you are a start-up looking for accounting, payroll, IT support, marketing services, tax advice or even legal advice, then look no further.",
+    "companyFormation-paragraph": "We understand that starting a new business or entering into a new market is challenging and time consuming. Delta Med delivers an entire suite of Company Formation services to choose from. Our qualified team of professionals will support you and your business from the very start."
+  },
   "ContactUs": {
     "title": "Contact With Us",
     "form-title": "Do you have questions ?",

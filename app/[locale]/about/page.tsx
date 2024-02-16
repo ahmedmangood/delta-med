@@ -6,7 +6,7 @@ function AboutPage() {
   const t = useTranslations("AboutUs");
   return (
     <main>
-      <HeaderSection title={t("title")} />
+      <HeaderSection title={t("title")} imageSrc="/webimages/about.jpg" />
       <PagesBanner title={t("bannerTitle")} paragraph={t("bannerParagraph")} />
       <AboutSlide
         title={t("slideOneTitle")}

@@ -18,6 +18,8 @@ import Footer from "./Footer";
 import HeaderSection from "./HeaderSection";
 import PagesBanner from "./PagesBanner";
 import AboutSlide from "./AboutSlide";
+import ServiceTitle from "./serviceTitle";
+import ServiceSection from "./serviceSection";
 
 export {
   ServiceSlider,
@@ -38,5 +40,7 @@ export {
   HeaderSection,
   PagesBanner,
   AboutSlide,
+  ServiceTitle,
+  ServiceSection,
   Footer,
 };
