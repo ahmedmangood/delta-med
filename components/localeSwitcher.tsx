@@ -6,6 +6,7 @@ import { useLocale } from "next-intl";
 import { ChangeEvent, useTransition } from "react";
 import { IoLanguageSharp } from "react-icons/io5";
 import { useRouter, usePathname } from "next-intl/client";
+import Image from "next/image";
 function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
@@ -20,14 +21,16 @@ function LocaleSwitcher() {
 
   return (
     <>
-      <Select
+      <select
         defaultValue={localeActive}
         onChange={onSelecting}
         disabled={isPending}
+        className="bg-transparent rounded-md "
       >
         <option value="ar">اللغة العربية</option>
+
         <option value="en">English</option>
-      </Select>
+      </select>
     </>
   );
 }
